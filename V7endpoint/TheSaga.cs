@@ -24,6 +24,7 @@ public class TheSaga :
     public Task Timeout(TheTimeout state, IMessageHandlerContext context)
     {
         MarkAsComplete();
+        Console.WriteLine("The saga has been completed.");
         return Task.CompletedTask;
     }
 }

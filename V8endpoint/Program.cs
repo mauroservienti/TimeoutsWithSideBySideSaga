@@ -1,5 +1,6 @@
 ﻿using Npgsql;
 using NpgsqlTypes;
+using NServiceBus;
 
 var endpointConfiguration = new EndpointConfiguration("Samples.SimpleSaga");
 endpointConfiguration.EnableInstallers();
